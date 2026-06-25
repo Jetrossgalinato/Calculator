@@ -13,35 +13,57 @@
     <div class="flex items-center justify-center min-h-screen">
       <!-- Outer Card -->
       <div class="w-[80%] lg:w-[30%] border border-black rounded-xl p-4">
-        <h1 class="text-md lg:text-lg font-semibold mb-2">Calculator</h1>
+        <h1 class="text-md lg:text-xl font-semibold mb-2">Calculator</h1>
         <!-- Output Section -->
-        <div class="h-[50%] border border-black rounded-lg p-4 mb-2"></div>
+        <div class="h-[50%] border border-black rounded-lg p-6 mb-2 relative">
+          <div class="absolute right-4 bottom-2 text-2xl">0</div>
+        </div>
         <!-- Buttons Section -->
         <div class="border border-black rounded-lg p-4">
           <div class="grid grid-cols-4 gap-4">
             <!-- Clear Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-full font-semibold text-red-500 p-4 cursor-pointer hover:bg-gray-100"
             >
               C
             </div>
             <!-- Percentage Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
             >
               %
             </div>
             <!-- Delete Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
             >
               <i data-lucide="delete"></i>
             </div>
             <!-- Division Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
             >
               <i data-lucide="divide"></i>
+            </div>
+            <div
+              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+            >
+              7
+            </div>
+            <div
+              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+            >
+              8
+            </div>
+            <div
+              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+            >
+              9
+            </div>
+            <div class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100">
+              <i data-lucide="x"></i>
+            </div>
+            </div>
             </div>
           </div>
         </div>
