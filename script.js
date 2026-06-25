@@ -1,7 +1,8 @@
-import { createIcons, Delete, icons } from "lucide";
+lucide.createIcons();
 
 createIcons({
   icons: {
     Delete,
+    Divide,
   },
 });

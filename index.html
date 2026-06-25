@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Calculator</title>
   </head>
   <body>
@@ -18,25 +19,29 @@
         <!-- Buttons Section -->
         <div class="border border-black rounded-lg p-4">
           <div class="grid grid-cols-4 gap-4">
+            <!-- Clear Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4"
+              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
             >
               C
             </div>
+            <!-- Percentage Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4"
+              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
             >
               %
             </div>
+            <!-- Delete Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4"
+              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
             >
               <i data-lucide="delete"></i>
             </div>
+            <!-- Division Button -->
             <div
-              class="flex justify-center border border-black rounded-full p-4"
+              class="flex justify-center border border-black rounded-full p-4 cursor-pointer hover:bg-gray-100"
             >
-              /
+              <i data-lucide="divide"></i>
             </div>
           </div>
         </div>
