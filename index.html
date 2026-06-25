@@ -12,106 +12,111 @@
     <!-- Parent Container -->
     <div class="flex items-center justify-center min-h-screen">
       <!-- Outer Card -->
-      <div class="w-[80%] lg:w-[30%] border border-black rounded-xl p-4">
-        <h1 class="text-md lg:text-xl font-semibold mb-2">Calculator</h1>
+      <div
+        class="w-[50%] lg:w-[30%] border border-black bg-gray-900 rounded-xl py-8 px-12 shadow-xl"
+      >
         <!-- Output Section -->
-        <div class="h-[50%] border border-black rounded-lg p-6 mb-2 relative">
-          <div class="absolute right-4 bottom-2 text-2xl">0</div>
+        <div class="h-[50%] border border-black bg-gray-400 p-8 mb-4 relative">
+          <div class="absolute right-4 bottom-2 text-3xl">0.</div>
         </div>
         <!-- Buttons Section -->
-        <div class="border border-black rounded-lg p-4">
+        <div class="w-full border-t-4 border-gray-400 bg-gray-900 pt-4">
           <div class="grid grid-cols-4 gap-4">
-            <!-- Clear Button -->
-            <div
-              class="flex justify-center border border-black rounded-full font-semibold text-red-500 p-4 cursor-pointer hover:bg-gray-100"
-            >
-              C
-            </div>
-            <!-- Percentage Button -->
-            <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
-            >
-              %
-            </div>
             <!-- Delete Button -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-400 hover:bg-rose-500"
             >
               <i data-lucide="delete"></i>
             </div>
-            <!-- Division Button -->
+            <!-- Clear Button -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-400 hover:bg-rose-500"
             >
-              <i data-lucide="divide"></i>
+              C
+            </div>
+            <!-- Percent Button -->
+            <div
+              class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-400 hover:bg-rose-500"
+            >
+              %
+            </div>
+            <!-- Slash Button -->
+            <div
+              class="flex justify-center border border-black rounded-lg font-semibold text-red-500 p-4 cursor-pointer text-white bg-teal-400 hover:bg-teal-500"
+            >
+              /
             </div>
             <!-- Button 7 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               7
             </div>
             <!-- Button 8 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               8
             </div>
             <!-- Button 9 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               9
             </div>
-            <!-- Multiplication Button -->
+            <!-- Multiply Button -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-teal-400 hover:bg-teal-500"
             >
               <i data-lucide="x"></i>
             </div>
             <!-- Button 4 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               4
             </div>
             <!-- Button 5 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               5
             </div>
             <!-- Button 6 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               6
             </div>
-            <!-- Subtraction Button -->
+            <!-- Subtract Button -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-teal-400 hover:bg-teal-500"
             >
               <i data-lucide="minus"></i>
             </div>
+            <!-- Button 1 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               1
             </div>
+            <!-- Button 2 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               2
             </div>
+            <!-- Button 3 -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
             >
               3
             </div>
+            <!-- Divide Button -->
             <div
-              class="flex justify-center border border-black rounded-full font-semibold text-blue-500 p-4 cursor-pointer hover:bg-gray-100"
+              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-teal-400 hover:bg-teal-500"
             >
-              <i data-lucide="plus"></i>
+              <i data-lucide="divide"></i>
             </div>
           </div>
         </div>
