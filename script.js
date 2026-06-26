@@ -11,6 +11,7 @@ const equalsBtn = document.getElementById("equals");
 const addBtn = document.getElementById("add");
 const subtractBtn = document.getElementById("subtract");
 const mutiplyBtn = document.getElementById("multiply");
+const divideBtn = document.getElementById("divide");
 
 function updateDisplay() {
   outputDisplay.innerHTML = output;
@@ -27,11 +28,13 @@ function appendCharacter(char) {
   updateDisplay();
 }
 
+//Clear Button
 clearBtn.addEventListener("click", () => {
   output = "0";
   updateDisplay();
 });
 
+//Add Button
 addBtn.addEventListener("click", () => {
   const lastChar = output.slice(-1);
   if (lastChar !== "+") {
@@ -39,6 +42,7 @@ addBtn.addEventListener("click", () => {
   }
 });
 
+//Subtract Button
 subtractBtn.addEventListener("click", () => {
   const lastChar = output.slice(-1);
   if (lastChar !== "-") {
@@ -46,10 +50,19 @@ subtractBtn.addEventListener("click", () => {
   }
 });
 
+//Muliply Button
 mutiplyBtn.addEventListener("click", () => {
   const lastChar = output.slice(-1);
   if (lastChar !== "*") {
     appendCharacter("*");
+  }
+});
+
+//Divide Button
+divideBtn.addEventListener("click", () => {
+  const lastChar = output.slice(-1);
+  if (lastChar !== "/") {
+    appendCharacter("/");
   }
 });
 
