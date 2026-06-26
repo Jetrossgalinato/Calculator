@@ -17,7 +17,9 @@
       >
         <!-- Output Section -->
         <div class="border border-black bg-gray-400 p-8 mb-8 mx-6 relative">
-          <div class="absolute right-4 bottom-2 text-3xl">0.</div>
+          <div class="absolute right-4 bottom-2 text-3xl">
+            <div id="output"></div>
+          </div>
         </div>
         <!-- Buttons Section -->
         <div class="w-full border-t-4 border-gray-500 bg-gray-900 pt-4">
@@ -29,11 +31,13 @@
               <i data-lucide="delete"></i>
             </div>
             <!-- Clear Button -->
-            <div
-              class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-500 hover:bg-rose-600"
-            >
-              C
-            </div>
+            <button id="clear">
+              <div
+                class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-500 hover:bg-rose-600"
+              >
+                C
+              </div>
+            </button>
             <!-- Percent Button -->
             <div
               class="flex justify-center border border-black rounded-lg font-semibold text-blue-500 p-4 cursor-pointer text-white bg-rose-500 hover:bg-rose-600"
@@ -47,11 +51,14 @@
               /
             </div>
             <!-- Button 7 -->
-            <div
-              class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
-            >
-              7
-            </div>
+            <button id="button7">
+              <div
+                class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
+              >
+                7
+              </div>
+            </button>
+
             <!-- Button 8 -->
             <div
               class="flex justify-center border border-black rounded-lg font-semibold p-4 cursor-pointer text-white bg-gray-500 hover:bg-gray-600"
