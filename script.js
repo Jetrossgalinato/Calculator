@@ -1,6 +1,7 @@
 lucide.createIcons();
 
-let output = "0";
+let output = ".";
+let isResult = false;
 
 //DOM elements
 const outputDisplay = document.getElementById("output");
@@ -20,8 +21,13 @@ function updateDisplay() {
 updateDisplay();
 
 function appendCharacter(char) {
-  if ((output === "0" && output.length === 1) || output === "Error!") {
+  if (
+    (output === "." && output.length === 1) ||
+    output === "Error!" ||
+    isResult
+  ) {
     output = char;
+    isResult = false;
   } else {
     output += char;
   }
@@ -30,7 +36,7 @@ function appendCharacter(char) {
 
 //Clear Button
 clearBtn.addEventListener("click", () => {
-  output = "0";
+  output = ".";
   updateDisplay();
 });
 
@@ -70,6 +76,7 @@ equalsBtn.addEventListener("click", () => {
   try {
     const result = eval(output);
     output = result.toString();
+    isResult = true;
     updateDisplay();
   } catch (error) {
     output = "Error!";
@@ -111,3 +118,6 @@ document
 document
   .getElementById("button0")
   .addEventListener("click", () => appendCharacter("0"));
+document
+  .getElementById("double")
+  .addEventListener("click", () => appendCharacter("00"));
