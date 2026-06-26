@@ -10,6 +10,7 @@ const clearBtn = document.getElementById("clear");
 const equalsBtn = document.getElementById("equals");
 const addBtn = document.getElementById("add");
 const subtractBtn = document.getElementById("subtract");
+const mutiplyBtn = document.getElementById("multiply");
 
 function updateDisplay() {
   outputDisplay.innerHTML = output;
@@ -42,6 +43,13 @@ subtractBtn.addEventListener("click", () => {
   const lastChar = output.slice(-1);
   if (lastChar !== "-") {
     appendCharacter("-");
+  }
+});
+
+mutiplyBtn.addEventListener("click", () => {
+  const lastChar = output.slice(-1);
+  if (lastChar !== "*") {
+    appendCharacter("*");
   }
 });
 
