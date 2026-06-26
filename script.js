@@ -4,9 +4,12 @@ let output = "0";
 
 //DOM elements
 const outputDisplay = document.getElementById("output");
+
+//action buttons
 const clearBtn = document.getElementById("clear");
-const addBtn = document.getElementById("add");
 const equalsBtn = document.getElementById("equals");
+const addBtn = document.getElementById("add");
+const subtractBtn = document.getElementById("subtract");
 
 function updateDisplay() {
   outputDisplay.innerHTML = output;
@@ -30,9 +33,15 @@ clearBtn.addEventListener("click", () => {
 
 addBtn.addEventListener("click", () => {
   const lastChar = output.slice(-1);
-
   if (lastChar !== "+") {
     appendCharacter("+");
+  }
+});
+
+subtractBtn.addEventListener("click", () => {
+  const lastChar = output.slice(-1);
+  if (lastChar !== "-") {
+    appendCharacter("-");
   }
 });
 
