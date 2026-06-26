@@ -12,6 +12,9 @@ const button9 = document.getElementById("button9");
 const button4 = document.getElementById("button4");
 const button5 = document.getElementById("button5");
 const button6 = document.getElementById("button6");
+const button1 = document.getElementById("button1");
+const button2 = document.getElementById("button2");
+const button3 = document.getElementById("button3");
 
 document.getElementById("output").innerHTML = output;
 
@@ -54,5 +57,23 @@ button5.addEventListener("click", () => {
 //Button 6
 button6.addEventListener("click", () => {
   output = 6;
+  document.getElementById("output").innerHTML = output;
+});
+
+//Button 1
+button1.addEventListener("click", () => {
+  output = 1;
+  document.getElementById("output").innerHTML = output;
+});
+
+//Button 2
+button2.addEventListener("click", () => {
+  output = 2;
+  document.getElementById("output").innerHTML = output;
+});
+
+//Button 3
+button3.addEventListener("click", () => {
+  output = 3;
   document.getElementById("output").innerHTML = output;
 });
