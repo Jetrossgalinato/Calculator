@@ -13,6 +13,7 @@ const addBtn = document.getElementById("add");
 const subtractBtn = document.getElementById("subtract");
 const mutiplyBtn = document.getElementById("multiply");
 const divideBtn = document.getElementById("divide");
+const moduloBtn = document.getElementById("modulo");
 
 function updateDisplay() {
   outputDisplay.innerHTML = output;
@@ -72,6 +73,15 @@ divideBtn.addEventListener("click", () => {
   }
 });
 
+//Modulo Button
+moduloBtn.addEventListener("click", () => {
+  const lastChar = output.slice(-1);
+  if (lastChar !== "%") {
+    appendCharacter("%");
+  }
+});
+
+//Equals Button
 equalsBtn.addEventListener("click", () => {
   try {
     const result = eval(output);
