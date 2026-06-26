@@ -15,7 +15,7 @@ function updateDisplay() {
 updateDisplay();
 
 function appendCharacter(char) {
-  if (output === "0" && output.length === 1) {
+  if ((output === "0" && output.length === 1) || output === "Error!") {
     output = char;
   } else {
     output += char;
@@ -29,7 +29,11 @@ clearBtn.addEventListener("click", () => {
 });
 
 addBtn.addEventListener("click", () => {
-  appendCharacter("+");
+  const lastChar = output.slice(-1);
+
+  if (lastChar !== "+") {
+    appendCharacter("+");
+  }
 });
 
 equalsBtn.addEventListener("click", () => {
@@ -40,11 +44,6 @@ equalsBtn.addEventListener("click", () => {
   } catch (error) {
     output = "Error!";
     updateDisplay();
-
-    setTimeout(() => {
-      output = "0";
-      updateDisplay();
-    }, 1500);
   }
 });
 
@@ -76,3 +75,9 @@ document
 document
   .getElementById("button3")
   .addEventListener("click", () => appendCharacter("3"));
+document
+  .getElementById("button.")
+  .addEventListener("click", () => appendCharacter("."));
+document
+  .getElementById("button0")
+  .addEventListener("click", () => appendCharacter("0"));
