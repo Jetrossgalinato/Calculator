@@ -7,6 +7,7 @@ let isResult = false;
 const outputDisplay = document.getElementById("output");
 
 //action buttons
+const deleteBtn = document.getElementById("delete");
 const clearBtn = document.getElementById("clear");
 const equalsBtn = document.getElementById("equals");
 const addBtn = document.getElementById("add");
@@ -34,6 +35,15 @@ function appendCharacter(char) {
   }
   updateDisplay();
 }
+
+//Delete Button
+deleteBtn.addEventListener("click", () => {
+  output = output.slice(0, -1);
+  if (output === "") {
+    output = ".";
+  }
+  updateDisplay();
+});
 
 //Clear Button
 clearBtn.addEventListener("click", () => {
