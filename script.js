@@ -38,11 +38,16 @@ function appendCharacter(char) {
 
 //Delete Button
 deleteBtn.addEventListener("click", () => {
-  output = output.slice(0, -1);
-  if (output === "") {
+  if (output === "Error!") {
     output = ".";
+    updateDisplay();
+  } else {
+    output = output.slice(0, -1);
+    if (output === "") {
+      output = ".";
+    }
+    updateDisplay();
   }
-  updateDisplay();
 });
 
 //Clear Button
